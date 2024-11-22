@@ -1,0 +1,6 @@
+last_updated,temp_c,temp_f,is_day,text,code,name,region,country,created_date_local,created_date_utc
+2024-10-07T09:00:00.000000,29.3,84.7,1,Partly cloudy,1003,Bangkok,Krung Thep,Thailand,2024-10-07T09:01:00.000000,2024-10-07T02:01:00.000000+0000
+2024-10-07T09:00:00.000000,26.2,79.2,1,Light rain,1183,Chiang Mai,Chiang Mai,Thailand,2024-10-07T09:01:00.000000,2024-10-07T02:01:00.000000+0000
+2024-10-07T09:00:00.000000,28.2,82.8,1,Partly cloudy,1003,Phuket,Phuket,Thailand,2024-10-07T09:01:00.000000,2024-10-07T02:01:00.000000+0000
+2024-10-07T08:45:00.000000,26.9,80.5,1,Patchy rain nearby,1063,Pattaya,Chon Buri,Thailand,2024-10-07T09:01:00.000000,2024-10-07T02:01:00.000000+0000
+2024-10-07T09:00:00.000000,25.4,77.7,1,Partly cloudy,1003,Hat Yai,Songkhla,Thailand,2024-10-07T09:01:00.000000,2024-10-07T02:01:00.000000+0000

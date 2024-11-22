@@ -1,0 +1,6 @@
+name,region,country,current_temp_c,min_forecast,max_forecast,mean_forecast,highest_temp_date,avg_temp,min_temp,max_temp
+Hat Yai,Songkhla,Thailand,25.4,23.2,31.4,26.2,2024-10-09,25.8,23.2,31.4
+Chiang Mai,Chiang Mai,Thailand,26.2,20.5,31.7,24.9,2024-10-08,25.55,20.5,31.7
+Pattaya,Chon Buri,Thailand,26.9,25.3,30.6,27.73,2024-10-07,27.32,25.3,30.6
+Bangkok,Krung Thep,Thailand,29.3,25.5,32.9,28.37,2024-10-07,28.84,25.5,32.9
+Phuket,Phuket,Thailand,28.2,25.3,29.0,27.2,2024-10-08,27.7,25.3,29.0
