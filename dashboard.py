@@ -13,15 +13,20 @@ def load_data():
     return location, merged, stats
 
 
-def create_range_chart(df, city):
+def create_range_chart(df: pl.DataFrame, city):
     # Filter data for the selected city
-    fc_data = df.filter(pl.col("name") == city).select(
-        [
-            "forecast_date",
-            "forecast_mintemp_c",
-            "forecast_maxtemp_c",
-            "forecast_avgtemp_c",
-        ]
+    fc_data = (
+        df.filter(pl.col("name") == city)
+        .select(
+            [
+                "forecast_date",
+                "created_date_local",
+                "forecast_mintemp_c",
+                "forecast_maxtemp_c",
+                "forecast_avgtemp_c",
+            ]
+        )
+        .filter(pl.col("created_date_local") == pl.col("created_date_local").max())
     )
 
     # Convert dates to just show the day
@@ -144,6 +149,7 @@ def main():
         stats_detail = stats.filter(pl.col("name") == option)
         additional_data = (
             merged.filter(pl.col("name") == option)
+            .filter(pl.col("created_date_local") == pl.col("created_date_local").max())
             .group_by(["name", "region", "country"])
             .agg(pl.col("uv").mean(), pl.col("forecast_maxwind_kph").mean())
         )
