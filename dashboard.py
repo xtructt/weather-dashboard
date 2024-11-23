@@ -166,7 +166,7 @@ def main():
     st.markdown("<br>", unsafe_allow_html=True)
     st.subheader("Forecast details")
     st.dataframe(
-        stats.drop("avg_temp").to_pandas(),
+        stats.to_pandas(),
         use_container_width=True,
     )
 
