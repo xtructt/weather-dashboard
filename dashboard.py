@@ -154,7 +154,7 @@ def main():
             .agg(pl.col("uv").mean(), pl.col("forecast_maxwind_kph").mean())
         )
         st.info(
-            f"🔥 The hottest day is {stats_detail.item(0, 7)} at {stats_detail.item(0, 10)}°C"
+            f"🔥 The hottest day is {stats_detail.item(0, 7)} at {stats_detail.item(0, 9)}°C"
         )
         st.info(
             f"🌡️ The average temperature based on the forecast is {stats_detail.item(0, 6)}°C"
